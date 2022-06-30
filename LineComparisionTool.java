@@ -16,8 +16,5 @@ public class LineComparisionTool {
         double length2 = LengthCalculation.lineLength();
 
         LengthComparision.lengthComparision(length1,length2);
-
-        int compare = length1.compareTo(length2);
-
     }
 }
