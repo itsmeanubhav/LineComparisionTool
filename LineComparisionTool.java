@@ -4,20 +4,13 @@ import utilityFunctions.LengthComparision;
 public class LineComparisionTool {
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparison Computation Program on Master Branch");
-
-        //UC - 1
-        System.out.println(LengthCalculation.lineLength());
-
-        //UC - 2
         System.out.println("Enter the Co Ordinates of 1st Line");
-        double length1 = LengthCalculation.lineLength();
+        String length1 = Integer.toString((int) LengthCalculation.lineLength());  //Converting double to integer and integer to String using type Casting
 
         System.out.println("Enter the Co Ordinates of 2nd Line");
-        double length2 = LengthCalculation.lineLength();
+        String length2 = Integer.toString((int)LengthCalculation.lineLength());  //Converting double to integer and integer to String using type Casting
 
-        LengthComparision.lengthComparision(length1,length2);
-
-        int compare = length1.compareTo(length2);
-
+        LengthComparision lengthCompare = new LengthComparision(); //Creating Object For LengthComparision Class
+        lengthCompare.lengthDifference(length1, length2); //calling lengthDifference Mehtod
     }
 }
